@@ -3,7 +3,7 @@ cache:
   directories:
     - ~/.npm
 node_js:
-  -14.15.4
+  -'14.15.4'
 git:
   depth: 3
 script:
@@ -11,7 +11,7 @@ script:
 deploy:
   provider: pages
   edge: true
-  skip-cleanup: true
+  cleanup: true
   keep-history: true
   github-token: $GITHUB_TOKEN
   local-dir: dist/
