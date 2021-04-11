@@ -1,26 +1,21 @@
-{
-  "script": "-yarn build", 
-  "git": {
-    "depth": 3
-  }, 
-  "language": "node_js", 
-  "deploy": {
-    "true": {
-      "branch": "master"
-    }, 
-    "github-token": "$GITHUB_TOKEN", 
-    "keep-history": true, 
-    "target-branch": "gh-pages", 
-    "edge": true, 
-    "provider": "pages", 
-    "commit_message": "Deploy Release", 
-    "local-dir": "dist/", 
-    "cleanup": true
-  }, 
-  "cache": {
-    "directories": [
-      "~/.npm"
-    ]
-  }, 
-  "node_js": "-'12'"
-}
+language: node_js
+cache:
+  directories:
+    - ~/.npm
+node_js:
+  -'12'
+git:
+  depth: 3
+script:
+  -yarn build
+deploy:
+  provider: pages
+  edge: true
+  cleanup: true
+  keep-history: true
+  github-token: $GITHUB_TOKEN
+  local-dir: dist/
+  target-branch: gh-pages
+  commit_message: "Deploy Release"
+  on:
+    branch: master
