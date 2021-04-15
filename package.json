@@ -4,9 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "webpack-cli serve --open --open --mode development",
-    "postinstall": "npm run build",
-    "build": "webpack --mode production"
+    "build": "webpack --mode production",
+    "start": "webpack-cli serve --open --open --mode development"
   },
   "author": "",
   "license": "ISC",
