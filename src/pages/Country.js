@@ -6,7 +6,7 @@ const Country = async () => {
     const country = countries[0];
     console.log(country);
     const view = `
-<a href="https://sergiorod21.github.io/Countries/" class="backbtn">
+<a href="/Countries/" class="backbtn">
     <!-- <img src="/public/assets/left-arrow.png" class="back-arrow" alt="left-arrow"> -->
     <p>Back</p>
 </a>
