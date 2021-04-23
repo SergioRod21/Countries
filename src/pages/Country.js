@@ -1,12 +1,12 @@
 import getData from '../utils/getData';
 import getHash from '../utils/getHash';
 const Country = async () => {
-const countryName = getHash();
-const countries = await getData(countryName);
-const country = countries[0];
-console.log(country);
-const view = `
-<a href="/#" class="backbtn">
+    const countryName = getHash();
+    const countries = await getData(countryName);
+    const country = countries[0];
+    console.log(country);
+    const view = `
+<a href="https://sergiorod21.github.io/Countries/" class="backbtn">
     <!-- <img src="/public/assets/left-arrow.png" class="back-arrow" alt="left-arrow"> -->
     <p>Back</p>
 </a>
@@ -23,7 +23,7 @@ const view = `
 </article>
 </div>
 `;
-return view;
+    return view;
 }
 
 export default Country;
