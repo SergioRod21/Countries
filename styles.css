@@ -159,6 +159,26 @@ body {
     font-size: 20px;
 }
 
-@media screen and (max-width : 550px){
+@media screen and (max-width : 768px){
+    .Countries {
+        grid-template-columns: 1fr 1fr;
+    }
+}
 
+@media screen and (max-width : 550px){
+    .Countries {
+        grid-template-columns: 1fr;
+    }
+    .Country {
+        grid-template-columns: 1fr;
+        grid-template-areas: "flag"
+                            "description";
+    }
+    .Country img {
+        width: 100%;
+    }
+
+    .Country__description {
+        margin-top: 20px;
+    }
 }
